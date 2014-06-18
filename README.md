@@ -30,7 +30,7 @@ an icinga server:
 
 ```puppet
 class { '::icinga::client':
-  icinga_servers => 'ips of servers',
+  icinga_servers => [ 'ips of server 1', 'ip of server 2', ... ]
 }
 ```
 _note: that icinga_servers might be set via hiera as well_
